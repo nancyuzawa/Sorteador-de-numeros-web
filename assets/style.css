@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    border: 0;
+    background-color: #e7effa;
+    font-family: "Titillium Web", sans-serif;
+}
+
+body{
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: auto;
+    padding: 2rem;
+    width: 30rem;
+    box-shadow:  0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+label, input, div, h1, p, h2, form{
+    background-color: #c6defe;
+    margin-bottom: .5rem;
+}
+
+input{
+    border: 1.5px solid#85ace0 ;
+    border-radius: 5px;
+    background-color: #a3c7f7;
+    padding-left: .5rem;
+    height: 1.7rem;
+}
+
+label{
+    font-weight: 600;
+}
+
+.inputDado{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="submit"]{
+    height: 2.5rem;
+    background-color: #6f96c9;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    width: 100%;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+input[type="submit"]:hover{
+    animation-duration: 10s;
+    background-color: #406691;
+}
+
+p, h1, h2, label{
+    color: #315074;
+}
+
+#caixaSorteados{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);/* Três colunas de 1fr */
+    gap: 20px;
+}
+
+.numSorteados{
+    background-color: #a3c7f7;
+    margin: .5rem auto; /*Centraliza o container*/
+    border-radius: 50%;
+    border: 1.5px  #6f96c9 solid;
+    width: 54%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separacao{
+    height: 0.1rem;
+    border-radius: 5px;
+    background-color: #315074;
+}
